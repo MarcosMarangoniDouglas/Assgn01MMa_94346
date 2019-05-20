@@ -1,5 +1,5 @@
 
-public class TestCar {
+public class Assgn01MMa_94346 {
 	public static void main(String[] args) {
 		System.out.println("Creating a sports car test");
 		SportCar_MMa_94346 sportCar = new SportCar_MMa_94346();
