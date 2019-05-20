@@ -1,4 +1,8 @@
-
+/**
+ * The git repository: https://github.com/MarcosMarangoniDouglas/Assgn01MMa_94346
+ * @author Marcos Marangoni
+ * Student ID: 30029436
+ */
 public class Assgn01MMa_94346 {
 	public static void main(String[] args) {
 		System.out.println("Creating a sports car test");
