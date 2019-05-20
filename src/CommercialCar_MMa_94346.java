@@ -1,5 +1,5 @@
 
-public class CommercialCar_MMa_94346 extends Car_MMa_94346  {
+public class CommercialCar_MMa_94346 extends Car_MMa_94346 implements CarInterface  {
 	private boolean cruiseEnabled, speedLimitEnabled;
 	private int speedLimit = 0; 
 	

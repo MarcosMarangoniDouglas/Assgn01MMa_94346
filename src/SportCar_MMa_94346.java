@@ -1,5 +1,5 @@
 
-public class SportCar_MMa_94346 extends Car_MMa_94346 {
+public class SportCar_MMa_94346 extends Car_MMa_94346 implements CarInterface {
 	private boolean turbo, abs;
 	
 	public boolean isTurbo() {
