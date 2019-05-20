@@ -19,6 +19,11 @@ public class SportCar_MMa_94346 extends Car_MMa_94346 implements CarInterface {
 	}
 	
 	@Override
+	public void startEngine() {
+		super.startEngine();
+	}
+	
+	@Override
 	public void speedCar(int increment) {
 		if(turbo) {
 			increment += 10;

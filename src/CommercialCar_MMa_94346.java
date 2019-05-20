@@ -32,6 +32,11 @@ public class CommercialCar_MMa_94346 extends Car_MMa_94346 implements CarInterfa
 	}
 	
 	@Override
+	public void startEngine() {
+		super.startEngine();
+	}
+	
+	@Override
 	public void speedCar(int increment) {
 		if(cruiseEnabled) disableCruiseMode();
 		if(speedLimitEnabled) {
