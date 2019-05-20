@@ -44,7 +44,7 @@ public class Car_MMa_94346 {
 	public void setSpeed(int speed) {
 		if(speed <= maxSpeed && speed >= 0) {
 			this.speed = speed;	
-			System.out.println("Actual speed: " + this.speed);
+			System.out.println("Actual speed: " + this.speed + " km/h");
 		}
 	}
 	
@@ -76,13 +76,19 @@ public class Car_MMa_94346 {
 	public void speedCar(int increment) {
 		if(!this.engineStarted) {
 			System.out.println("Start the car before speeding it up!");
+			return;
 		}
 		this.setSpeed(this.speed + increment);
 	}
 	
 	public void applyBreak(int decrement) {
+		if(!this.engineStarted) {
+			System.out.println("Start the car before trying to break the car!");
+			return;
+		}
 		if(this.speed <= 0) {
 			System.out.println("Car is already stoped");
+			return;
 		}
 		if(this.speed - decrement <= 0) this.setSpeed(0);
 		else this.setSpeed(this.speed - decrement);

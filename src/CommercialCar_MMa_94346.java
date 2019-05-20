@@ -4,8 +4,8 @@ public class CommercialCar_MMa_94346 extends Car_MMa_94346 implements CarInterfa
 	private int speedLimit = 0; 
 	
 	public void enableCruiseMode(int cruiseSpeed) {
-		if(cruiseSpeed < 40) {
-			System.out.println("The minimum cruise speed is 40km/h");
+		if(cruiseSpeed < 40 || cruiseSpeed > 120) {
+			System.out.println("The minimum cruise speed is 40km/h and the maximum is 120km/h");
 			return;
 		}
 		this.cruiseEnabled = true;
@@ -42,8 +42,10 @@ public class CommercialCar_MMa_94346 extends Car_MMa_94346 implements CarInterfa
 		if(speedLimitEnabled) {
 			if(getSpeed() + increment >= this.speedLimit) {
 				increment = this.speedLimit - getSpeed();
+				System.out.println("Car is at the speed limit");
 			} else if (getSpeed() == this.speedLimit) {
 				System.out.println("Car is at the speed limit");
+				increment = 0;
 			}
 		}
 		super.speedCar(increment);
